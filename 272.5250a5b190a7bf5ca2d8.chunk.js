@@ -1,0 +1,11 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[272],{
+
+/***/ "../EVA Design System/node_modules/brace/mode/gitignore.js":
+/***/ (function(module, exports) {
+
+eval("ace.define(\"ace/mode/gitignore_highlight_rules\",[\"require\",\"exports\",\"module\",\"ace/lib/oop\",\"ace/mode/text_highlight_rules\"], function(acequire, exports, module) {\n\"use strict\";\n\nvar oop = acequire(\"../lib/oop\");\nvar TextHighlightRules = acequire(\"./text_highlight_rules\").TextHighlightRules;\n\nvar GitignoreHighlightRules = function() {\n    this.$rules = {\n        \"start\" : [\n            {\n                token : \"comment\",\n                regex : /^\\s*#.*$/\n            }, {\n                token : \"keyword\", // negated patterns\n                regex : /^\\s*!.*$/\n            }\n        ]\n    };\n    \n    this.normalizeRules();\n};\n\nGitignoreHighlightRules.metaData = {\n    fileTypes: ['gitignore'],\n    name: 'Gitignore'\n};\n\noop.inherits(GitignoreHighlightRules, TextHighlightRules);\n\nexports.GitignoreHighlightRules = GitignoreHighlightRules;\n});\n\nace.define(\"ace/mode/gitignore\",[\"require\",\"exports\",\"module\",\"ace/lib/oop\",\"ace/mode/text\",\"ace/mode/gitignore_highlight_rules\"], function(acequire, exports, module) {\n\"use strict\";\n\nvar oop = acequire(\"../lib/oop\");\nvar TextMode = acequire(\"./text\").Mode;\nvar GitignoreHighlightRules = acequire(\"./gitignore_highlight_rules\").GitignoreHighlightRules;\n\nvar Mode = function() {\n    this.HighlightRules = GitignoreHighlightRules;\n    this.$behaviour = this.$defaultBehaviour;\n};\noop.inherits(Mode, TextMode);\n\n(function() {\n    this.lineCommentStart = \"#\";\n    this.$id = \"ace/mode/gitignore\";\n}).call(Mode.prototype);\n\nexports.Mode = Mode;\n});\n\n\n//# sourceURL=webpack:///../EVA_Design_System/node_modules/brace/mode/gitignore.js?");
+
+/***/ })
+
+}]);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIyNzIuNTI1MGE1YjE5MGE3YmY1Y2EyZDguY2h1bmsuanMiLCJzb3VyY2VSb290IjoiIn0=
